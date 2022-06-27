@@ -4,6 +4,7 @@
     <Item Type="SourceFile" Name="FX Encoder-Decoder.pas" Path="FX Encoder-Decoder.pas" />
     <Item Type="SourceFile" Name="Unit1.pas" Path="Unit1.pas" />
     <Item Type="SourceFile" Name="Unit2.pas" Path="Unit2.pas" />
+    <Item Type="SourceFile" Name="Unit3.pas" Path="Unit3.pas" />
     <Item Type="Reference" AssemblyName="System" FullAssemblyName="System.dll" />
     <Item Type="Reference" AssemblyName="System.Windows.Forms" FullAssemblyName="System.Windows.Forms.dll" />
     <Item Type="Reference" AssemblyName="System.Drawing" FullAssemblyName="System.Drawing.dll" />

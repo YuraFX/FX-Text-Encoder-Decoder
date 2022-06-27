@@ -5,7 +5,15 @@ procedure InitializeComponent;
         self.menuStrip1 := new System.Windows.Forms.MenuStrip();
         self.toolStripMenuItem1 := new System.Windows.Forms.ToolStripMenuItem();
         self.toolStripMenuItem2 := new System.Windows.Forms.ToolStripMenuItem();
+        self.toolStripMenuItem4 := new System.Windows.Forms.ToolStripMenuItem();
+        self.toolStripMenuItem9 := new System.Windows.Forms.ToolStripMenuItem();
+        self.toolStripMenuItem10 := new System.Windows.Forms.ToolStripMenuItem();
+        self.toolStripMenuItem11 := new System.Windows.Forms.ToolStripMenuItem();
+        self.toolStripMenuItem12 := new System.Windows.Forms.ToolStripMenuItem();
+        self.toolStripMenuItem13 := new System.Windows.Forms.ToolStripMenuItem();
+        self.toolStripMenuItem14 := new System.Windows.Forms.ToolStripMenuItem();
         self.toolStripMenuItem3 := new System.Windows.Forms.ToolStripMenuItem();
+        self.toolStripMenuItem8 := new System.Windows.Forms.ToolStripMenuItem();
         self.NonDecoderText := new System.Windows.Forms.RichTextBox();
         self.contextMenuStrip1 := new System.Windows.Forms.ContextMenuStrip(self.components);
         self.toolStripMenuItem5 := new System.Windows.Forms.ToolStripMenuItem();
@@ -21,17 +29,19 @@ procedure InitializeComponent;
         self.Block3 := new System.Windows.Forms.PictureBox();
         self.Clear1 := new System.Windows.Forms.Button();
         self.Clear2 := new System.Windows.Forms.Button();
+        self.WhiteBlock := new System.Windows.Forms.PictureBox();
         self.menuStrip1.SuspendLayout();
         self.contextMenuStrip1.SuspendLayout();
         (System.ComponentModel.ISupportInitialize(self.Block1)).BeginInit();
         (System.ComponentModel.ISupportInitialize(self.Block2)).BeginInit();
         (System.ComponentModel.ISupportInitialize(self.Block3)).BeginInit();
+        (System.ComponentModel.ISupportInitialize(self.WhiteBlock)).BeginInit();
         self.SuspendLayout();
         // 
         // menuStrip1
         // 
         self.menuStrip1.BackColor := System.Drawing.SystemColors.ControlDarkDark;
-        self.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[3](self.toolStripMenuItem1, self.toolStripMenuItem2, self.toolStripMenuItem3));
+        self.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[5](self.toolStripMenuItem1, self.toolStripMenuItem2, self.toolStripMenuItem4, self.toolStripMenuItem3, self.toolStripMenuItem8));
         self.menuStrip1.Location := new System.Drawing.Point(0, 0);
         self.menuStrip1.Name := 'menuStrip1';
         self.menuStrip1.Size := new System.Drawing.Size(591, 24);
@@ -54,6 +64,72 @@ procedure InitializeComponent;
         self.toolStripMenuItem2.Text := 'Расшифровать текст';
         self.toolStripMenuItem2.Click += toolStripMenuItem2_Click;
         // 
+        // toolStripMenuItem4
+        // 
+        self.toolStripMenuItem4.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[2](self.toolStripMenuItem9, self.toolStripMenuItem12));
+        self.toolStripMenuItem4.ForeColor := System.Drawing.Color.White;
+        self.toolStripMenuItem4.Name := 'toolStripMenuItem4';
+        self.toolStripMenuItem4.Size := new System.Drawing.Size(61, 20);
+        self.toolStripMenuItem4.Text := 'Прочее';
+        // 
+        // toolStripMenuItem9
+        // 
+        self.toolStripMenuItem9.BackColor := System.Drawing.SystemColors.ControlDarkDark;
+        self.toolStripMenuItem9.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[2](self.toolStripMenuItem10, self.toolStripMenuItem11));
+        self.toolStripMenuItem9.ForeColor := System.Drawing.Color.White;
+        self.toolStripMenuItem9.Image := (System.Drawing.Image(resources.GetObject('toolStripMenuItem9.Image')));
+        self.toolStripMenuItem9.Name := 'toolStripMenuItem9';
+        self.toolStripMenuItem9.Size := new System.Drawing.Size(152, 22);
+        self.toolStripMenuItem9.Text := 'Тема';
+        // 
+        // toolStripMenuItem10
+        // 
+        self.toolStripMenuItem10.BackColor := System.Drawing.SystemColors.ControlDarkDark;
+        self.toolStripMenuItem10.ForeColor := System.Drawing.Color.White;
+        self.toolStripMenuItem10.Name := 'toolStripMenuItem10';
+        self.toolStripMenuItem10.Size := new System.Drawing.Size(118, 22);
+        self.toolStripMenuItem10.Text := 'Тёмная';
+        self.toolStripMenuItem10.Click += toolStripMenuItem10_Click;
+        // 
+        // toolStripMenuItem11
+        // 
+        self.toolStripMenuItem11.BackColor := System.Drawing.SystemColors.ControlDarkDark;
+        self.toolStripMenuItem11.ForeColor := System.Drawing.Color.White;
+        self.toolStripMenuItem11.Name := 'toolStripMenuItem11';
+        self.toolStripMenuItem11.Size := new System.Drawing.Size(118, 22);
+        self.toolStripMenuItem11.Text := 'Светлая';
+        self.toolStripMenuItem11.Click += toolStripMenuItem11_Click;
+        // 
+        // toolStripMenuItem12
+        // 
+        self.toolStripMenuItem12.BackColor := System.Drawing.SystemColors.ControlDarkDark;
+        self.toolStripMenuItem12.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[2](self.toolStripMenuItem13, self.toolStripMenuItem14));
+        self.toolStripMenuItem12.ForeColor := System.Drawing.Color.White;
+        self.toolStripMenuItem12.Image := (System.Drawing.Image(resources.GetObject('toolStripMenuItem12.Image')));
+        self.toolStripMenuItem12.Name := 'toolStripMenuItem12';
+        self.toolStripMenuItem12.Size := new System.Drawing.Size(152, 22);
+        self.toolStripMenuItem12.Text := 'Язык';
+        // 
+        // toolStripMenuItem13
+        // 
+        self.toolStripMenuItem13.BackColor := System.Drawing.SystemColors.ControlDarkDark;
+        self.toolStripMenuItem13.ForeColor := System.Drawing.Color.White;
+        self.toolStripMenuItem13.Image := (System.Drawing.Image(resources.GetObject('toolStripMenuItem13.Image')));
+        self.toolStripMenuItem13.Name := 'toolStripMenuItem13';
+        self.toolStripMenuItem13.Size := new System.Drawing.Size(141, 22);
+        self.toolStripMenuItem13.Text := 'Английский';
+        self.toolStripMenuItem13.Click += toolStripMenuItem13_Click;
+        // 
+        // toolStripMenuItem14
+        // 
+        self.toolStripMenuItem14.BackColor := System.Drawing.SystemColors.ControlDarkDark;
+        self.toolStripMenuItem14.ForeColor := System.Drawing.Color.White;
+        self.toolStripMenuItem14.Image := (System.Drawing.Image(resources.GetObject('toolStripMenuItem14.Image')));
+        self.toolStripMenuItem14.Name := 'toolStripMenuItem14';
+        self.toolStripMenuItem14.Size := new System.Drawing.Size(141, 22);
+        self.toolStripMenuItem14.Text := 'Русский';
+        self.toolStripMenuItem14.Click += toolStripMenuItem14_Click;
+        // 
         // toolStripMenuItem3
         // 
         self.toolStripMenuItem3.ForeColor := System.Drawing.Color.White;
@@ -61,6 +137,14 @@ procedure InitializeComponent;
         self.toolStripMenuItem3.Size := new System.Drawing.Size(94, 20);
         self.toolStripMenuItem3.Text := 'О программе';
         self.toolStripMenuItem3.Click += toolStripMenuItem3_Click;
+        // 
+        // toolStripMenuItem8
+        // 
+        self.toolStripMenuItem8.Name := 'toolStripMenuItem8';
+        self.toolStripMenuItem8.Size := new System.Drawing.Size(94, 20);
+        self.toolStripMenuItem8.Text := 'О программе';
+        self.toolStripMenuItem8.Visible := false;
+        self.toolStripMenuItem8.Click += toolStripMenuItem8_Click;
         // 
         // NonDecoderText
         // 
@@ -205,10 +289,20 @@ procedure InitializeComponent;
         self.Clear2.Visible := false;
         self.Clear2.Click += Clear2_Click;
         // 
+        // WhiteBlock
+        // 
+        self.WhiteBlock.BackColor := System.Drawing.SystemColors.ButtonFace;
+        self.WhiteBlock.Location := new System.Drawing.Point(1, 12);
+        self.WhiteBlock.Name := 'WhiteBlock';
+        self.WhiteBlock.Size := new System.Drawing.Size(590, 195);
+        self.WhiteBlock.TabIndex := 10;
+        self.WhiteBlock.TabStop := false;
+        self.WhiteBlock.Visible := false;
+        // 
         // Form1
         // 
         self.AutoSizeMode := System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-        self.BackColor := System.Drawing.SystemColors.ActiveCaptionText;
+        self.BackColor := System.Drawing.SystemColors.InactiveCaptionText;
         self.ClientSize := new System.Drawing.Size(591, 205);
         self.Controls.Add(self.Clear2);
         self.Controls.Add(self.Clear1);
@@ -220,18 +314,21 @@ procedure InitializeComponent;
         self.Controls.Add(self.Block1);
         self.Controls.Add(self.NonDecoderText);
         self.Controls.Add(self.Block2);
+        self.Controls.Add(self.WhiteBlock);
+        self.ForeColor := System.Drawing.Color.Black;
         self.Icon := (System.Drawing.Icon(resources.GetObject('$this.Icon')));
         self.MainMenuStrip := self.menuStrip1;
         self.MaximizeBox := false;
         self.Name := 'Form1';
         self.StartPosition := System.Windows.Forms.FormStartPosition.CenterScreen;
-        self.Text := 'FX Text Encoder/Decoder 1.0';
+        self.Text := 'FX Text Encoder/Decoder 1.1';
         self.menuStrip1.ResumeLayout(false);
         self.menuStrip1.PerformLayout();
         self.contextMenuStrip1.ResumeLayout(false);
         (System.ComponentModel.ISupportInitialize(self.Block1)).EndInit();
         (System.ComponentModel.ISupportInitialize(self.Block2)).EndInit();
         (System.ComponentModel.ISupportInitialize(self.Block3)).EndInit();
+        (System.ComponentModel.ISupportInitialize(self.WhiteBlock)).EndInit();
         self.ResumeLayout(false);
         self.PerformLayout();
     end;
