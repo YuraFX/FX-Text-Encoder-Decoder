@@ -30,6 +30,7 @@ procedure InitializeComponent;
         self.Clear1 := new System.Windows.Forms.Button();
         self.Clear2 := new System.Windows.Forms.Button();
         self.WhiteBlock := new System.Windows.Forms.PictureBox();
+        self.toolStripMenuItem16 := new System.Windows.Forms.ToolStripMenuItem();
         self.menuStrip1.SuspendLayout();
         self.contextMenuStrip1.SuspendLayout();
         (System.ComponentModel.ISupportInitialize(self.Block1)).BeginInit();
@@ -103,7 +104,7 @@ procedure InitializeComponent;
         // toolStripMenuItem12
         // 
         self.toolStripMenuItem12.BackColor := System.Drawing.SystemColors.ControlDarkDark;
-        self.toolStripMenuItem12.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[2](self.toolStripMenuItem13, self.toolStripMenuItem14));
+        self.toolStripMenuItem12.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[3](self.toolStripMenuItem13, self.toolStripMenuItem14, self.toolStripMenuItem16));
         self.toolStripMenuItem12.ForeColor := System.Drawing.Color.White;
         self.toolStripMenuItem12.Image := (System.Drawing.Image(resources.GetObject('toolStripMenuItem12.Image')));
         self.toolStripMenuItem12.Name := 'toolStripMenuItem12';
@@ -116,7 +117,7 @@ procedure InitializeComponent;
         self.toolStripMenuItem13.ForeColor := System.Drawing.Color.White;
         self.toolStripMenuItem13.Image := (System.Drawing.Image(resources.GetObject('toolStripMenuItem13.Image')));
         self.toolStripMenuItem13.Name := 'toolStripMenuItem13';
-        self.toolStripMenuItem13.Size := new System.Drawing.Size(141, 22);
+        self.toolStripMenuItem13.Size := new System.Drawing.Size(152, 22);
         self.toolStripMenuItem13.Text := 'Английский';
         self.toolStripMenuItem13.Click += toolStripMenuItem13_Click;
         // 
@@ -126,7 +127,7 @@ procedure InitializeComponent;
         self.toolStripMenuItem14.ForeColor := System.Drawing.Color.White;
         self.toolStripMenuItem14.Image := (System.Drawing.Image(resources.GetObject('toolStripMenuItem14.Image')));
         self.toolStripMenuItem14.Name := 'toolStripMenuItem14';
-        self.toolStripMenuItem14.Size := new System.Drawing.Size(141, 22);
+        self.toolStripMenuItem14.Size := new System.Drawing.Size(152, 22);
         self.toolStripMenuItem14.Text := 'Русский';
         self.toolStripMenuItem14.Click += toolStripMenuItem14_Click;
         // 
@@ -167,7 +168,7 @@ procedure InitializeComponent;
         // 
         // toolStripMenuItem5
         // 
-        self.toolStripMenuItem5.BackColor := System.Drawing.SystemColors.ActiveCaptionText;
+        self.toolStripMenuItem5.BackColor := System.Drawing.Color.Black;
         self.toolStripMenuItem5.ForeColor := System.Drawing.Color.White;
         self.toolStripMenuItem5.Name := 'toolStripMenuItem5';
         self.toolStripMenuItem5.Size := new System.Drawing.Size(139, 22);
@@ -176,7 +177,7 @@ procedure InitializeComponent;
         // 
         // toolStripMenuItem6
         // 
-        self.toolStripMenuItem6.BackColor := System.Drawing.SystemColors.ActiveCaptionText;
+        self.toolStripMenuItem6.BackColor := System.Drawing.Color.Black;
         self.toolStripMenuItem6.ForeColor := System.Drawing.Color.White;
         self.toolStripMenuItem6.Name := 'toolStripMenuItem6';
         self.toolStripMenuItem6.Size := new System.Drawing.Size(139, 22);
@@ -185,7 +186,7 @@ procedure InitializeComponent;
         // 
         // toolStripMenuItem7
         // 
-        self.toolStripMenuItem7.BackColor := System.Drawing.SystemColors.ActiveCaptionText;
+        self.toolStripMenuItem7.BackColor := System.Drawing.Color.Black;
         self.toolStripMenuItem7.ForeColor := System.Drawing.Color.White;
         self.toolStripMenuItem7.Name := 'toolStripMenuItem7';
         self.toolStripMenuItem7.Size := new System.Drawing.Size(139, 22);
@@ -299,6 +300,16 @@ procedure InitializeComponent;
         self.WhiteBlock.TabStop := false;
         self.WhiteBlock.Visible := false;
         // 
+        // toolStripMenuItem16
+        // 
+        self.toolStripMenuItem16.BackColor := System.Drawing.SystemColors.ControlDarkDark;
+        self.toolStripMenuItem16.ForeColor := System.Drawing.Color.White;
+        self.toolStripMenuItem16.Image := (System.Drawing.Image(resources.GetObject('toolStripMenuItem16.Image')));
+        self.toolStripMenuItem16.Name := 'toolStripMenuItem16';
+        self.toolStripMenuItem16.Size := new System.Drawing.Size(152, 22);
+        self.toolStripMenuItem16.Text := 'Польский';
+        self.toolStripMenuItem16.Click += toolStripMenuItem16_Click;
+        // 
         // Form1
         // 
         self.AutoSizeMode := System.Windows.Forms.AutoSizeMode.GrowAndShrink;
@@ -321,7 +332,7 @@ procedure InitializeComponent;
         self.MaximizeBox := false;
         self.Name := 'Form1';
         self.StartPosition := System.Windows.Forms.FormStartPosition.CenterScreen;
-        self.Text := 'FX Text Encoder/Decoder 1.1';
+        self.Text := 'FX Text Encoder/Decoder 1.2';
         self.menuStrip1.ResumeLayout(false);
         self.menuStrip1.PerformLayout();
         self.contextMenuStrip1.ResumeLayout(false);

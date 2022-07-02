@@ -10,7 +10,7 @@
 //
 //  You should have received a copy of the GNU General Public License
 //  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
-uses Unit1, Unit2, Unit3, Unit4, Unit5;
+uses Unit1, Unit2, Unit3;
 
 begin
   System.Windows.Forms.Application.EnableVisualStyles();

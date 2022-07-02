@@ -13,7 +13,7 @@ procedure InitializeComponent;
         self.ProgName.Name := 'ProgName';
         self.ProgName.Size := new System.Drawing.Size(218, 23);
         self.ProgName.TabIndex := 1;
-        self.ProgName.Text := 'FX Text Encoder/Decoder 1.1';
+        self.ProgName.Text := 'FX Text Encoder/Decoder 1.2';
         self.ProgName.TextAlign := System.Drawing.ContentAlignment.TopCenter;
         // 
         // Author

@@ -14,7 +14,7 @@ Unit Unit1;
 
 interface
 
-uses System, System.Drawing, System.Windows.Forms, Unit2, Unit3, Unit4;
+uses System, System.Drawing, System.Windows.Forms, Unit2, Unit3;
 
 type
   Form1 = class(Form)
@@ -33,6 +33,7 @@ type
     procedure toolStripMenuItem13_Click(sender: Object; e: EventArgs);
     procedure toolStripMenuItem14_Click(sender: Object; e: EventArgs);
     procedure toolStripMenuItem8_Click(sender: Object; e: EventArgs);
+    procedure toolStripMenuItem16_Click(sender: Object; e: EventArgs);
   {$region FormDesigner}
   internal
     {$resource Unit1.Form1.resources}
@@ -64,6 +65,7 @@ type
     toolStripMenuItem13: ToolStripMenuItem;
     toolStripMenuItem14: ToolStripMenuItem;
     toolStripMenuItem8: ToolStripMenuItem;
+    toolStripMenuItem16: ToolStripMenuItem;
     menuStrip1: MenuStrip;
     {$include Unit1.Form1.inc}
   {$endregion FormDesigner}
@@ -175,6 +177,7 @@ begin
   ToolStripMenuItem12.BackColor:=Color.FromArgb(100, 149, 237); //
   ToolStripMenuItem13.BackColor:=Color.FromArgb(100, 149, 237); //
   ToolStripMenuItem14.BackColor:=Color.FromArgb(100, 149, 237); //
+  ToolStripMenuItem16.BackColor:=Color.FromArgb(100, 149, 237); //
   /////////////////////////////////////////////////////////
   ToolStripMenuItem1.ForeColor:=Color.FromArgb(0, 0, 0);        // Изменение цвета текста кнопок в верхнем меню.
   ToolStripMenuItem2.ForeColor:=Color.FromArgb(0, 0, 0);        //
@@ -187,6 +190,14 @@ begin
   ToolStripMenuItem12.ForeColor:=Color.FromArgb(0, 0, 0);       //
   ToolStripMenuItem13.ForeColor:=Color.FromArgb(0, 0, 0);       //
   ToolStripMenuItem14.ForeColor:=Color.FromArgb(0, 0, 0);       //
+  ToolStripMenuItem16.ForeColor:=Color.FromArgb(0, 0, 0);       //
+  /////////////////////////////////////////////////////////
+  toolstripMenuItem5.BackColor:=Color.FromArgb(100, 149, 237);  // Изменение цвета фона и текста ToolStrip
+  toolstripMenuItem6.BackColor:=Color.FromArgb(100, 149, 237);  //
+  toolstripMenuItem7.BackColor:=Color.FromArgb(100, 149, 237);  //
+  toolstripMenuItem5.ForeColor:=Color.FromArgb(0, 0, 0);        // 
+  toolstripMenuItem6.ForeColor:=Color.FromArgb(0, 0, 0);        //
+  toolstripMenuItem7.ForeColor:=Color.FromArgb(0, 0, 0);        //
   /////////////////////////////////////////////////////////
   ToolStripMenuItem8.Visible:=true;                             // Появление клона кнопки "О программе".
   ToolStripMenuItem3.Visible:=false;                            // Исчезновение кнопки "О программе".
@@ -211,6 +222,7 @@ begin
   ToolStripMenuItem12.BackColor:=Color.FromArgb(105,105,105); //
   ToolStripMenuItem13.BackColor:=Color.FromArgb(105,105,105); //
   ToolStripMenuItem14.BackColor:=Color.FromArgb(105,105,105); //
+  ToolStripMenuItem16.BackColor:=Color.FromArgb(105,105,105); //
   /////////////////////////////////////////////////////////
   ToolStripMenuItem1.ForeColor:=Color.FromArgb(255,255,255);  // Изменение цвета текста кнопок в верхнем меню.
   ToolStripMenuItem2.ForeColor:=Color.FromArgb(255,255,255);  //
@@ -223,7 +235,15 @@ begin
   ToolStripMenuItem12.ForeColor:=Color.FromArgb(255,255,255); //
   ToolStripMenuItem13.ForeColor:=Color.FromArgb(255,255,255); //
   ToolStripMenuItem14.ForeColor:=Color.FromArgb(255,255,255); //
-  /////////////////////////////////////////////////////////
+  ToolStripMenuItem16.ForeColor:=Color.FromArgb(255,255,255); //
+  /////////////////////////////////////////////////////////   
+  toolstripMenuItem5.BackColor:=Color.FromArgb(0, 0, 0);      // Изменение цвета фона и текста ToolStrip
+  toolstripMenuItem6.BackColor:=Color.FromArgb(0, 0, 0);      //
+  toolstripMenuItem7.BackColor:=Color.FromArgb(0, 0, 0);      //
+  toolstripMenuItem5.ForeColor:=Color.FromArgb(255,255,255);  //
+  toolstripMenuItem6.ForeColor:=Color.FromArgb(255,255,255);  //
+  toolstripMenuItem7.ForeColor:=Color.FromArgb(255,255,255);  //
+  /////////////////////////////////////////////////////////  
   ToolStripMenuItem8.Visible:=false;                          // Исчезновение клона кнопки "О программе".
   ToolStripMenuItem3.Visible:=true;                           // Появление кнопки "О программе".  
 end;
@@ -240,6 +260,7 @@ begin
   ToolStripMenuItem12.Text:='Language';                       //
   ToolStripMenuItem13.Text:='English';                        //
   ToolStripMenuItem14.Text:='Russian';                        //
+  ToolStripMenuItem16.Text:='Polish';                         //
   //////////////////////////////////////////////              //
   Encrypt.Text:='Encrypt text';                               //
   Decrypt.Text:='Decrypt text';                               //
@@ -270,6 +291,7 @@ begin
   ToolStripMenuItem12.Text:='Язык';                           //
   ToolStripMenuItem13.Text:='Английский';                     //
   ToolStripMenuItem14.Text:='Русский';                        //
+  ToolStripMenuItem16.Text:='Польский';                       //
   //////////////////////////////////////////////              //
   Encrypt.Text:='Шифровать текст';                            //
   Decrypt.Text:='Дешифровать текст';                          //
@@ -286,6 +308,37 @@ begin
   //////////////////////////////////////////////              //
   OpenFileDialog1.FileName:='Шифрованный текст';              //
   OpenFileDialog1.Filter:='Текст (*.fx) | *.fx';              //
+end;
+
+procedure Form1.toolStripMenuItem16_Click(sender: Object; e: EventArgs);
+begin
+  ToolStripMenuItem1.Text:='Zaszyfruj tekst';                 // Изменение языка интерфейса на Польский.
+  ToolStripMenuItem2.Text:='Odszyfruj tekst';                 //
+  ToolStripMenuItem3.Text:='O programie';                     //
+  ToolStripMenuItem4.Text:='Inny';                            //
+  ToolStripMenuItem9.Text:='Temat';                           //
+  ToolStripMenuItem10.Text:='Ciemny';                         //
+  ToolStripMenuItem11.Text:='Światło';                        //
+  ToolStripMenuItem12.Text:='Język';                          //
+  ToolStripMenuItem13.Text:='język angielski';                //
+  ToolStripMenuItem14.Text:='Rosyjski';                       //
+  ToolStripMenuItem16.Text:='Polski';                         //
+  //////////////////////////////////////////////              //
+  Encrypt.Text:='Zaszyfruj tekst';                            //
+  Decrypt.Text:='Odszyfruj tekst';                            //
+  Clear1.Text:='Czyste pole';                                 //
+  Clear2.Text:='Czyste pole';                                 //
+  //////////////////////////////////////////////              //
+  toolStripMenuItem5.Text:='Kopiuj';                          //
+  toolStripMenuItem6.Text:='Odetnij';                         //
+  toolStripMenuItem7.Text:='Wstawić';                         //
+  toolStripMenuItem8.Text:='O programie';                     //
+  //////////////////////////////////////////////              //
+  SaveFileDialog1.FileName:='Zaszyfrowany tekst';             //
+  SaveFileDialog1.Filter:='Tekst (*.fx) | *.fx';              //
+  //////////////////////////////////////////////              //
+  OpenFileDialog1.FileName:='Zaszyfrowany tekst';             //
+  OpenFileDialog1.Filter:='Tekst (*.fx) | *.fx';              //
 end;
 
 procedure Form1.toolStripMenuItem8_Click(sender: Object; e: EventArgs);
